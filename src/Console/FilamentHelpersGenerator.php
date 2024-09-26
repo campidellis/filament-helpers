@@ -38,7 +38,7 @@ class FilamentHelpersGenerator extends Command
                 options: $modules,
                 required: true
             );
-            $moduleResourcesPath = module_path($module) . "/app/Filament/{$panel}/Resources";
+            $moduleResourcesPath = module_path($module) . "/app/Filament/$panel/Resources";
             $getResourcesList = collect(File::directories($moduleResourcesPath));
             if (count($getResourcesList)) {
                 $resource = select(
@@ -64,7 +64,7 @@ class FilamentHelpersGenerator extends Command
                     required: true,
                     hint: 'e.g. Campidellis\FilamentAccounts'
                 );
-                $pathResources = $path . "/Filament/{$panel}/Resources";
+                $pathResources = $path . "/Filament/$panel/Resources";
                 $getResourcesList = collect(File::directories($pathResources));
                 if (count($getResourcesList)) {
                     $resource = select(
@@ -83,6 +83,7 @@ class FilamentHelpersGenerator extends Command
             path: $path ?? null,
             namespace: $namespace ?? null,
             resource: $resource ?? null,
+            panel: $panel ?? null,
         );
         $generator->generate();
         info('Class created successfully.');

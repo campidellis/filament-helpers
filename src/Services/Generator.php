@@ -21,6 +21,7 @@ class Generator
         public ?string $path=null,
         public ?string $namespace=null,
         public ?string $resource=null,
+        public ?string $panel=null,
     )
     {
         if(config('filament-helpers.stub_path')){

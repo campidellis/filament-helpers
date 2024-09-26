@@ -22,8 +22,8 @@ trait GenerateFilters
             $filtersNamespace = $this->namespace . "\\Filament\\Filters";
         }
         if($this->resource){
-            $filtersPath = $this->path . "/Filament/Resources/".$this->resource . "/Filters/";
-            $filtersNamespace = $this->namespace ."\\Filament\\Resources\\" . $this->resource . "\\Filters";
+            $filtersPath = $this->path . "/Filament/$this->panel/Resources/".$this->resource . "/Filters/";
+            $filtersNamespace = $this->namespace ."\\Filament\\$this->panel\\Resources\\" . $this->resource . "\\Filters";
         }
 
         $filename = $filtersPath . $this->name . "Filters.php";

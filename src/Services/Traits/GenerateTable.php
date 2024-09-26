@@ -22,8 +22,8 @@ trait GenerateTable
             $tablesNamespace = $this->namespace . "\\Filament\\Tables";
         }
         if($this->resource){
-            $tablesPath = $this->path . "/Filament/Resources/".$this->resource . "/Tables/";
-            $tablesNamespace = $this->namespace ."\\Filament\\Resources\\" . $this->resource . "\\Tables";
+            $tablesPath = $this->path . "/Filament/$this->panel/Resources/".$this->resource . "/Tables/";
+            $tablesNamespace = $this->namespace ."\\Filament\\$this->panel\\Resources\\" . $this->resource . "\\Tables";
         }
 
         $filename = $tablesPath . $this->name . "Table.php";

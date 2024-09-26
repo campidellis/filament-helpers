@@ -23,8 +23,8 @@ trait GenerateForm
             $formsNamespace = $this->namespace . "\\Filament\\Forms";
         }
         if($this->resource){
-            $formsPath = $this->path . "/Filament/Resources/".$this->resource . "/Forms/";
-            $formsNamespace = $this->namespace ."\\Filament\\Resources\\" . $this->resource . "\\Forms";
+            $formsPath = $this->path . "/Filament/$this->panel/Resources/".$this->resource . "/Forms/";
+            $formsNamespace = $this->namespace ."\\Filament\\$this->panel\\Resources\\" . $this->resource . "\\Forms";
         }
 
         $filename = $formsPath . $this->name . "Form.php";

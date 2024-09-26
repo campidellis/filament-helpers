@@ -22,8 +22,8 @@ trait GenerateActions
             $actionsNamespace = $this->namespace . "\\Filament\\Actions";
         }
         if($this->resource){
-            $actionsPath = $this->path . "/Filament/Resources/".$this->resource . "/Actions/";
-            $actionsNamespace = $this->namespace ."\\Filament\\Resources\\" . $this->resource . "\\Actions";
+            $actionsPath = $this->path . "/Filament/$this->panel/Resources/".$this->resource . "/Actions/";
+            $actionsNamespace = $this->namespace ."\\Filament\\$this->panel\\Resources\\" . $this->resource . "\\Actions";
         }
 
         $filename = $actionsPath . $this->name . "Actions.php";
