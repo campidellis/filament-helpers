@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Filament\Tables;
+use Filament\Forms;
+use Campidellis\FilamentHelpers\Contracts\FiltersBuilder;
+
+class {{ name }}Filters extends FiltersBuilder
+{
+    public function filters(): array
+    {
+        return [
+            //
+        ];
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "name": "campidellis/filament-helpers",
+    "type": "library",
+    "description": "Helper Class Generator to manage your forms and table inside your filament app",
+    "keywords": [
+        "php",
+        "laravel",
+        "filament",
+        "generator",
+        "form class",
+        "table class",
+        "relation class",
+        "field class"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Campidellis\\FilamentHelpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Campidellis\\FilamentHelpers\\FilamentHelpersServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Campidelli"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "tomatophp/console-helpers": "^1.1",
+        "filament/filament": "^3.0.0"
+    }
+}
