@@ -83,7 +83,6 @@ class FilamentHelpersGenerator extends Command
             path: $path ?? null,
             namespace: $namespace ?? null,
             resource: $resource ?? null,
-            panel: $panel
         );
         $generator->generate();
         info('Class created successfully.');
