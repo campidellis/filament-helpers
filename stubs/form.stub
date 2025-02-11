@@ -8,10 +8,15 @@ use Campidellis\FilamentHelpers\Contracts\FormBuilder;
 
 class {{ name }}Form extends FormBuilder
 {
+
     public function form(Form $form): Form
     {
-        return $form->schema([
-            //
-        ]);
+
+        return $form
+            ->schema([
+                //
+            ]);
+
     }
+    
 }

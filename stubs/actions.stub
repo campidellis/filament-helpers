@@ -9,10 +9,14 @@ use Campidellis\FilamentHelpers\Contracts\ActionsBuilder;
 
 class {{ name }}Actions extends ActionsBuilder
 {
+
     public function actions(): array
     {
+
         return [
             //
         ];
+        
     }
+    
 }
